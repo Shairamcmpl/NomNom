@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	/* Specify the font family */
+	background: linear-gradient(to right, #FFBB5C, #C63D2F);
+  }
+  
+  #Logo {
+	width: 500px;
+	height: auto;
+  }
+  
+  
+  .btn-signup {
+	background: linear-gradient(to right, #FFBB5C, #C63D2F);
+	border: none;
+	color: #fff;
+	/* Text color */
+	font-size: 0.9rem;
+	letter-spacing: 0.05rem;
+	padding: 0.75rem 1rem;
+	margin-bottom: 10px;
+  }
+  
+  .text-center a {
+	color: #C63D2F;
+  }
+
+  .text-center p {
+	margin-top: -10px;
+  }
+
+  .card-body {
+	background-color: #f7dcc2;
+  }
+
+  .card-title {
+	padding: 15px;
+  }
+
+  .card {
+	box-sizing: border-box;
+  }
+
+
+  .gender-radio{
+	margin-left: 10px;
+	margin-top: 3px;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+	.container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container-fluid {
+		max-width: 750px;
+	}
+
+	.form-container {
+		width: 90%;
+	}
+}
+
+
+@media screen and (min-width: 992px) {
+	.container-fluid {
+		max-width: 970px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container-fluid {
+		max-width: 1170px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.logo-container {
+		text-align: center;
+	}
+
+	.form-container {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+    .container-fluid {
+        width: 80%; 
+    }
+    .form-container {
+        width: 70%; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-fluid {
+        width: 95%; 
+    }
+    .form-container {
+        width: 90%; 
+    }
+	.logo-container {
+        margin-bottom: 5px;
+    }
+}

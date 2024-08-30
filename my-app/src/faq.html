@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomNom</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="./assets/css/homepage.css" rel="stylesheet">      
+
+        <!--icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!--
+
+STart
+
+-->
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="./homepage.html">
+                      <img src="./assets/images/logs.png" alt="back" width="70" height="65">
+                      <span class="brand-text">NomNom</span>
+                    </a>
+    
+                    <!-- Profile -->
+                    <button id="Profile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <img src="assets/images/profile/nav-profile.png" alt="Button Image" style="width: 37px; height: 37px;">
+                    </button>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="./profile.html" class="sub-menu-link">
+                            <img src="./assets/images/profile/Edit-profile.png">
+                            <p>Profile Info</p>
+                            <span>></span>
+                        </a>
+                        <a href="./saved.html" class="sub-menu-link">
+                            <img src="./assets/images/profile/saved-locations.png">
+                            <p>Saved Locations</p>
+                            <span>></span>
+                        </a>
+                        <div class="d-grid" id="btn_logout">
+                            <button class="btn btn-primary btn-signup text-uppercase fw-bold" type="logout" style="background-color: #E25E3E;">Log out</button>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="./homepage.html">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll"  href="./stalls.html">FOOD STALLS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="./guide.html">HOW IT WORKS?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="./faq.html">FAQs</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="./developers.html">DEVELOPERS</a>
+                            </li>
+                        </ul>
+                    </div> <!-- Closing div for navbar-collapse -->
+    
+                </div>
+            </nav>g
+           
+           <!-- Header -->
+           <header id="myGuide" class="site-header d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-5 col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./homepage.html">Homepage</a></li>
+
+                                <li class="breadcrumb-item active" aria-current="page">Guide</li>
+                            </ol>
+                        </nav>
+                        <div class="topics-detail-block bg-white shadow-lg">
+                            <img src="./assets/images/guide/faq_1.gif" class="topics-detail-block-image img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+      </main>
+
+        <!-- FA Q START-->
+
+        <section class="faq-section section-padding" id="#section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 text-center">
+                        <h2 id="faqText" class="mb-4">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-6 col-12 m-auto">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How does the app contribute to the overall campus experience for students and staff?
+                                    </button>
+                                </h2>
+
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The app enhances the campus experience by providing convenient access to a variety of food options. Whether it's grabbing a quick bite between classes or exploring new dining experiences with friends, the app enriches campus life and fosters a vibrant community atmosphere.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Will the university's food stall locator app include menus, prices, user reviews and ratings in the future?
+                                    </button>
+                                </h2>
+                            
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        While our current focus is on providing accurate location tracking for nearby food stalls, we do plan to integrate menus, prices, user reviews and ratings in future updates to enhance the app's functionality and user experience.
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Is the university's food stall locator app easy to use for first-time users?
+                                </button>
+                                </h2>
+
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, the app is designed to be user-friendly, even for first-time users. It includes a comprehensive guide and intuitive interface to help users navigate and make the most out of its features effortlessly. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </section>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script type="module" src="./assets/homepage/jquery.min.js"></script>
+    <script type="module" src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./assets/homepage/jquery.sticky.js"></script>
+    <script type="module" src="./assets/homepage/click-scroll.js"></script>
+    <script type="module" src="./assets/registration_js/auth/dashboard.js"></script>     
+
+</body>
+</html>

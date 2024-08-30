@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomNom</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="./assets/css/homepage.css" rel="stylesheet">      
+
+        <!--icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <script type="module" src="./assets/registration_js/auth/guides.js"></script>  
+        <script type="module" src="./assets/registration_js/auth/guides.js"></script>
+<!--
+
+STart
+
+-->
+    </head>
+    
+    <body id="top">
+            
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="./homepage.html">
+                      <img src="./assets/images/logs.png" alt="back" width="70" height="65">
+                      <span class="brand-text">NomNom</span>
+                    </a>
+
+                   
+                    <!-- Profile -->
+                    <button id="Profile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <img src="assets/images/profile/nav-profile.png" alt="Button Image" style="width: 37px; height: 37px;">
+                    </button>    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="./profile.html" class="sub-menu-link">
+                            <img src="./assets/images/profile/Edit-profile.png">
+                            <p>Profile Info</p>
+                            <span>></span>
+                        </a>
+                        <a href="./saved.html" class="sub-menu-link">
+                            <img src="./assets/images/profile/saved-locations.png">
+                            <p>Saved Locations</p>
+                            <span>></span>
+                        </a>
+                        <div class="d-grid" id="btn_logout">
+                            <button class="btn btn-primary btn-signup text-uppercase fw-bold" type="logout" style="background-color: #E25E3E;">Log out</button>
+                        </div>
+                    </div>
+                    </div>
+                  
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="./homepage.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll"  href="./stalls.html">FOOD STALLS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="./guide.html">HOW IT WORKS?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="./faq.html">FAQs</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="./developers.html">DEVELOPERS</a>
+                            </li>
+                       </ul>
+                    </div>
+                </div>
+           </nav>
+ 
+
+    <!-- carousel -->
+
+    <div class="containerCarousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://static.vecteezy.com/system/resources/previews/004/968/603/original/turn-on-or-enable-location-concept-illustration-flat-design-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-vector.jpg" class="d-block w-100" style="width: 200px; height: 600px;" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://i.pinimg.com/564x/c4/04/6b/c4046b8796349a524e841960ec6d45f1.jpg" class="d-block w-100" style="width: 200px; height: 600px;" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://img.freepik.com/vetores-gratis/aplicativo-gps-com-bussola-e-lupa_24877-57124.jpg?w=740&t=st=1712591203~exp=1712591803~hmac=f6ad668551b4aedaa6abcc320b3c6dee1499c973c5126dad9b1573669f49dc84" class="d-block w-100" style="width: 200px; height: 600px;" alt="...">
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- end of carousel -->
+
+    
+
+    <section class="timeline-section section-padding" id="section_4">
+        <div class="section-overlay"></div>
+
+        <div class="container">
+            <div class="row">
+
+                <div id="guide_buttom" class="col-12 text-center">
+                    <h2 class="text-white mb-4">Find Nearby Food Stalls in 2 Easy Steps!</h2>
+                </div>
+
+                <div class="col-lg-10 col-12 mx-auto">
+                    <div class="timeline-container">
+                        <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                            <div class="list-progress">
+                                <div class="inner"></div>
+                            </div>
+
+                            <li>
+                                <h4 class="text-white mb-3">Enable location access on your phone.</h4>
+
+                                <p class="text-white">Enable location access for the app by toggling the switch to "On" or selecting "Allow."</p>
+
+                                <div class="icon-holder">
+                                    <i class="bi bi-phone"></i>
+                                </div>
+                                
+                            </li>
+                            
+
+                            <li>
+                                <h4 class="text-white mb-3">Explore nearby food stalls.</h4>
+
+                                <p class="text-white">Once your current location is displayed on the map, zoom in or browse around to see nearby areas.
+                                    Look for icons or markers that represent food stalls, restaurants, or eateries.
+                                    Tap on these icons or markers to view more information about the food stalls.
+                                    Choose a food stall that interests you and navigate to it using the directions provided by the app if needed.</p>
+
+                                <div class="icon-holder">
+                                        <i class="bi bi-search"></i>
+                                        
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+     <!-- JAVASCRIPT FILES -->
+     <script type="module" src="./assets/homepage/jquery.min.js"></script>
+     <script type="module" src="./assets/js/bootstrap.bundle.min.js"></script>
+     <script type="module" src="./assets/homepage/jquery.sticky.js"></script>
+     <script type="module" src="./assets/homepage/click-scroll.js"></script>
+     <script type="module" src="./assets/homepage/custom.js"></script>
+
+     
+
+ </body>
+</html>

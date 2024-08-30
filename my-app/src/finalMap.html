@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Location</title>
+  <link rel="stylesheet" href="./assets/maps/finalMap.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="map">
+    <div id="map">
+    </div>
+  </div>
+
+
+  <div class="bottom-navigation">
+    <a href="homepage.html">
+      <img src="assets/images/maps/home.png" alt="Home" width="20" height="18" class="navbar-icon">
+        <div>Home</div>
+    </a>
+
+    <a href="#" id="btn_oncurrent">
+      <img src="assets/images/maps/placeholder.png" alt="Current Location" width="20" height="18" class="navbar-icon">
+        <div>Current Location</div>
+    </a>
+  </div>
+
+  <script type="module" src="./assets/maps/finalMap.js"></script>
+  <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCE-qS_pYABICZBqYenwTc_6xSs8Ig7xI&callback=initMap" async defer></script>
+  <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomNom</title>
+    <!-- CSS FILES -->        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/css/homepage.css" rel="stylesheet">   
+    <link rel="icon" type="image/png" href="./assets/images/logs.png">
+
+   
+
+</head>
+<body id="top">
+    <main>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./homepage.html">
+                    <img src="./assets/images/logs.png" alt="back" width="70" height="65">
+                    <span class="brand-text">NomNom</span>
+                </a>
+                <button id="Profile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img src="assets/images/profile/nav-profile.png" alt="Button Image" style="width: 37px; height: 37px;">
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <br>
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <a href="./profile.html" class="sub-menu-link">
+                        <img src="./assets/images/profile/Edit-profile.png">
+                        <p>Profile Info</p>
+                        <span>></span>
+                    </a>
+                    <a href="./saved.html" class="sub-menu-link">
+                        <img src="./assets/images/profile/saved-locations.png">
+                        <p>Saved Locations</p>
+                        <span>></span>
+                    </a>
+                    <div class="d-grid" id="btn_logout">
+                        <button class="text-uppercase fw-bold">Log out</button>
+                    </div>
+                </div>
+                </div>
+                <!-- Profile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="./homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll"  href="./stalls.html">FOOD STALLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="./guide.html">HOW IT WORKS?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="./faq.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="./developers.html">DEVELOPERS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <!--alert notification-->
+                <div class="alert alert-success d-none" role="alert"></div>
+                <div class="alert alert-danger d-none" role="alert">.</div>
+                <div class="row">
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h1 id="custom-heading mt-2" class="text-white text-center">Easiest way to find your food!</h1>
+                        <br>
+                        <br>
+                        <h5 class="text-center custom-color">
+                            Craving something? <span id="foodTypewriter">Burger</span>
+                        </h5>
+                        <div class="text-center">
+                            <a href="./finalMap.html" class="location-button">
+                                <i class="bi bi-search"></i>Find Nearby Food Stalls
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-section" id="section-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block bg-white shadow-lg">
+                            <!-- <a href="./stalls.html"></a> -->
+                                <div class="d-flex">
+                                    <div>
+                                        <h5 class="mb-2"> CLICK HERE TO VIEW ALL THE FOOD STALLS</h5>
+                                        <p class="mb-0"> Visit the food stall page to find nearby delights!</p>
+                                    </div>
+                                    <span class="badge bg-design rounded-pill ms-auto">1</span>
+                                </div>
+                                <a href="./stalls.html"><img src="./assets/images/stalls/num1.png" class="custom-block-image img-fluid moving-image" alt=""></a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6 col-12 mb-2 mb-lg-0">
+                        <div class="custom-block-2 bg-white shadow-lg">
+                            <!-- <a href="./guide.html"></a> -->
+                                <div class="d-flex">
+                                    <div>
+                                        <h5 class="mb-2"> Getting Started: Your Essential User Guide</h5>
+                                        <p class="mb-0"> Discover cool things nearby and have fun exploring with our app guide!</p>
+                                    </div>
+                                    <span class="badge bg-design rounded-pill ms-auto">2</span>
+                                </div>
+                                <a href="./guide.html"> <img src="./assets/images/guide/guide_banner.jpg" class="custom-block-image img-fluid" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JAVASCRIPT FILES -->
+    <script type="module" src="./assets/homepage/jquery.min.js"></script>
+    <script type="module" src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./assets/homepage/jquery.sticky.js"></script>
+    <script type="module" src="./assets/homepage/custom.js"></script>
+    <script type="module" src="./assets/registration_js/sign-in.js"></script>
+    <script type="module" src="./assets/homepage/click-scroll.js"></script>
+    <!-- MAPS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCE-qS_pYABICZBqYenwTc_6xSs8Ig7xI&callback=initMap" async defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- TYPING -->
+    <script type="module" src="./assets/homepage/typing.js"></script>
+
+   
+    <script type="module" src="./assets/registration_js/auth/dashboard.js"></script>     
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+ <head>
+  <title>Travel Modes in Directions</title>
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+ 
+ <link rel="stylesheet" type="text/css" href="./assets/css/route.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+ </head>
+  <body>
+  <div id="floating-panel">
+   <b>Mode of Travel: </b>
+   <select id="mode">
+    <option value="DRIVING">Driving</option>
+    <option value="WALKING">Walking</option>
+   </select>
+  </div>
+  <div id="map"></div>
+
+  <div class="bottom-navigation">
+    <a href="stalls.html">
+      <img src="assets/images/maps/cart.png" alt="Home" width="20" height="18" class="navbar-icon">
+        <div>Stalls</div>
+    </a>
+
+    <a href="#" id="btn_oncurrent">
+      <img src="assets/images/maps/placeholder.png" alt="Current Location" width="20" height="18" class="navbar-icon">
+        <div>Current Location</div>
+    </a>
+  </div>
+
+  <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+  <script
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCE-qS_pYABICZBqYenwTc_6xSs8Ig7xI&callback=initMap&v=weekly"
+   defer
+  ></script>
+  <script type="module" src="./assets/maps_js/ajj.js"></script>
+ </body>
+</html>
+

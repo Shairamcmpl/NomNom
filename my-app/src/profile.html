@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap Datepicker CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <!-- PorofileCSS -->
+  <link rel="stylesheet" href="./assets/registration _form/profile.css">
+
+  <!-- jQuery UI CSS -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+</head>
+<body>
+  <div id="profTop" class="container">
+    <div class="text-center mt-3">
+      <a href="./homepage.html" id="backToHome"><i class="fas fa-arrow-circle-left fa-2x"></i>
+      </a>
+    </div>
+
+    <h1 style="margin-right: 30px;">User Profile</h1> 
+    <div id="get_data">
+
+    </div>
+  </div>
+
+  <!-- Edit Profile Modal -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form id="form_edit">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editProfileModalLabel">Edit Profile Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-success d-none" role="alert">
+        </div>
+        <div class="alert alert-danger d-none" role="alert">
+        </div>
+        <!-- Edit Profile Form -->
+      
+          <div class="form-group">
+            <label for="edit-username">First Name</label>
+            <input type="text" class="form-control" id="firstname" name="firstname">
+          </div>
+          <div class="form-group">
+            <label for="edit-username">Last Name</label>
+            <input type="text" class="form-control" id="lastname" name="lastname">
+          </div>
+          <div class="form-group">
+            <label for="edit-birthday">Birthday</label>
+            <input type="date" class="form-control" id="birthdate" name="birthdate">
+          </div>
+          <div class="form-group">
+            <label for="edit-contact">Contact Number</label>
+            <input type="number" class="form-control" id="contact_number" name="contact_number">
+          </div>
+          <div class="form-group" id="gender_edit">
+            <label for="Gender">Gender</label>
+            <div class="gender-options">
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+              <input type="radio" id="others" name="gender" value="others">
+              <label for="others">Others</label>
+            </div>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="edit-profile-picture">Upload Profile Picture</label>
+        <input type="file" class="form-control" id="image_path" name="image_path">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+
+<script type="module" src="./assets/js/bootstrap.bundle.min.js"></script>
+ <!-- Bootstrap and jQuery Scripts -->
+ <script type="module" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script type="module" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script type="module" src="./assets/registration_js/profile.js"></script>
+
+ <!-- Bootstrap Datepicker JS -->
+<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<!-- jQuery -->
+<script type="module" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- jQuery UI JS -->
+<script type="module" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="module" src="./assets/registration_js/auth/user.js"></script>
+</body>
+</html>
+
+<!--- ila rhowin ni
+ </head>
+  <body>
+  
+    <section style="background-color: #eee;">
+        
+      <div class="container py-5">
+        <div class="apply_box">
+            <div class="alert alert-success d-none" role="alert">
+             </div>
+             <div class="alert alert-danger d-none" role="alert">
+             </div>
+        </div>
+          <div class="row">
+              <div class="col">
+                  <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                      <ol class="breadcrumb mb-0">
+                          <li class="breadcrumb-item "><a href="home.html" style="color:  #5bcf21; text-decoration: none;">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#" style="color: #5bcf21; text-decoration: none;">Edit</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                      </ol>
+                  </nav>
+              </div>
+          </div>
+          <div id="get_data">
+
+          </div>
+      </div>
+  </section>
+
+//Edit Modal 
+//Edit Modal 
+ <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <form id="form_edit">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="editModalLabel">Edit Profile</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              //Input fields for editing 
+              <div class="mb-3">
+                  <label for="editFullName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="first_name" name="first_name" required>
+              </div>
+              <div class="mb-3">
+                  <label for="editEmail" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="last_name" name="last_name" required>
+              </div>
+              <div class="mb-3">
+                  <label for="editEmail" class="form-label">Middle Name</label>
+                  <input type="text" class="form-control" id="middle_name" name="middle_name" required>
+              </div>
+              <div class="mb-3">
+                  <label for="editPhone" class="form-label">Mobile Phone</label>
+                  <input type="tel" class="form-control" id="phone_num" name="phone_num" >
+              </div>
+              
+              <div class="mb-3">
+                  <label for="formFileMultiple" class="form-label">Upload Profile Picture</label>
+                  <input class="form-control" type="file" id="image_path" name="image_path" multiple >
+                </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" id="saveChangesBtn">Save Changes</button>
+          </div>
+      </div>
+  </form>
+  </div>
+</div>
+-->

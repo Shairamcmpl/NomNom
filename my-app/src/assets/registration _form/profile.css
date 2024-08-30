@@ -1,0 +1,338 @@
+html,
+body {
+  overflow: auto;
+  max-width: 100%;
+  max-height: 130%;
+}
+
+#prof {
+  background-color: transparent;
+  border: none;
+}
+body {
+  background-image: linear-gradient(#FFBB5C 18%, #FF9B50 28%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin-bottom: 5px;
+  margin-left: 0%;
+}
+
+.fa-arrow-circle-left{
+  margin-right: 100%;
+  color: #E25E3E;
+  width: 10%;
+  font-size: 220%;
+  margin-top: -20%;
+}
+
+.fa-arrow-circle-left:hover {
+  color: #d14816;
+}
+
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 0%;
+}
+
+.avatar {
+  width: 168px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 7px;
+  right: 46%;
+  transform: translateX(50%);
+  background-color: #d14816;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  height: 37px;
+  width: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+@media only screen and (min-width: 375px) and (max-width: 844px) {
+  .upload-icon {
+    bottom: 7px;
+    right: 112px;
+  }
+
+  .edit-button {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: -20px;
+  }
+}
+
+
+/*IPAD MINI*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .upload-icon {
+    bottom: 7px;
+    right: 285px;
+  }
+
+  .edit-button {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: -30px;
+  }
+}
+/*IPAD AIR*/
+@media (min-width: 820px) and (max-width: 1180px) {
+  .upload-icon {
+    bottom: 7px;
+    right: 300px;
+  }
+
+  .edit-button {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: -35px;
+  }
+}
+/*IPAD PRO*/
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .upload-icon {
+    bottom: 7px;
+    right: 395px;
+  }
+
+  .edit-button {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: -20px;
+  }
+}
+
+
+  h1 {
+    margin-bottom: 5px;
+    margin-left: 5%;
+  }
+
+  .avatar-container {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 5%;
+  }
+
+
+h1,
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+.personal-info {
+  margin-top: 20px;
+}
+
+.info-box {
+  background-color: #fcf4da;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 40%;
+  margin-left: 30%;
+ 
+}
+
+.personal-info{
+  width: 94%;
+}
+
+
+.info-box h4 {
+  color: #333;
+  margin-bottom: 8px;
+  margin-top: 2%;
+  margin-left: 4%;
+}
+
+.info-box p {
+  color: #555;
+  margin-bottom: 5px;
+  margin-left: 4%;
+}
+
+/* Media query for iPad Mini */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .info-box {
+   width: 85%; /* Adjust as needed */
+    margin-left: 10%;
+  }
+}
+
+/* Media query for iPhone 12 */
+@media only screen and (max-device-width: 390px) {
+.info-box {
+margin-bottom: 18px;
+padding: 14px;
+width: 100%; /* Adjust as needed */
+margin-left: 2%; /* Center the box horizontally */
+margin-right: 4%;
+ } 
+}  
+
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .info-box {
+    margin-bottom: 18px;
+    padding: 20px;
+    width: 80%; /* Adjust as needed */
+    margin-left: 10%; /* Center the box horizontally */
+    margin-right: 4%;
+     } 
+}
+
+
+.info-box .icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #E25E3E;
+}
+
+.edit-button {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 0%;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #E25E3E !important;
+  border-color: #E25E3E !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(226, 94, 62, 0.5) !important;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #C63D2F !important;
+  border-color: #C63D2F !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: #C63D2F !important;
+  border-color: #C63D2F !important;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #E25E3E;
+}
+
+#profTop {
+  margin-bottom: 50%; /* Adjust as needed */
+}
+
+
+@media (max-width: 812px) {
+/* iPhone 12 portrait mode */
+.modal-dialog {
+  max-width: 90%;
+  margin: 1.75rem auto;
+}
+}
+
+@media (max-width: 768px) {
+/* iPad Mini portrait mode */
+.modal-dialog {
+  max-width: 90%;
+  margin: 1.75rem auto;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .modal-dialog {
+    max-width: 70%; /* Adjust as needed */
+    margin: 2rem auto; /* Adjust margin as needed */
+  }
+}
+
+#editProfileModal{
+margin-top: 20%;
+}
+
+/* Profile.css */
+.modal-backdrop {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(25, 25, 25, 25.5); /* Adjust the opacity as needed */
+z-index: 1040; /* Ensure the backdrop is above other elements */
+}
+
+/* Media query for Samsung A13 */
+@media only screen and (max-width: 720px) and (max-height: 1600px) {
+  /* Your responsive styles for Samsung A13 here */
+  .container {
+      padding: 10px; /* Example adjustment */
+  }
+
+  .avatar-container {
+      margin-left: 8%; /* Example adjustment */
+  }
+
+  .info-box {
+      width: 90%; /* Example adjustment */
+      margin-left: 9%; /* Example adjustment */
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+
+

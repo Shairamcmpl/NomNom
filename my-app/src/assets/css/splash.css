@@ -1,0 +1,24 @@
+.se-pre-con {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FFBB5C, #C63D2F);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.se-pre-con img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+body {
+    background: linear-gradient(to right, #FFBB5C, #C63D2F);
+}
+
+

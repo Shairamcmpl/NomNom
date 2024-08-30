@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	/* Specify the font family */
+	background: linear-gradient(to right, #FFBB5C, #C63D2F);
+  }
+  
+  #Logo {
+	width: 500px;
+	height: auto;
+  }
+  
+  
+  .btn-signup {
+	background: linear-gradient(to right, #FFBB5C, #C63D2F);
+	border: none;
+	color: #fff;
+	/* Text color */
+	font-size: 0.9rem;
+	letter-spacing: 0.05rem;
+	padding: 0.75rem 1rem;
+	margin-bottom: 10px;
+  }
+  
+  .text-center a {
+	color: #C63D2F;
+  }
+
+  .text-center p {
+	margin-top: -10px;
+  }
+
+  .card-body {
+	background-color: #f7dcc2;
+	box-sizing: content-box;
+  }
+
+  .card-title {
+	padding: 15px;
+	
+  }
+
+
+@media screen and (max-width: 768px) {
+	.container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container-fluid {
+		max-width: 750px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container-fluid {
+		max-width: 970px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container-fluid {
+		max-width: 1170px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.logo-container {
+		text-align: center;
+	}
+
+	.form-container {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+    .container-fluid {
+        width: 80%; /* Adjust the width of the container for larger screens */
+    }
+    .form-container {
+        width: 70%; /* Adjust the width of the form for larger screens */
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 576px) {
+    .container-fluid {
+        width: 95%; /* Adjust the width of the container for smaller screens */
+    }
+    .form-container {
+        width: 100%; /* Adjust the width of the form for smaller screens */
+    }
+	.logo-container {
+        margin-bottom: 5px; /* Reduce space below the logo for smaller screens */
+    }
+}
+#SignIn {
+	font-weight: bold;
+}

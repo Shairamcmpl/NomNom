@@ -1,0 +1,48 @@
+.fa-arrow-circle-left{
+    margin-right: 80%;
+    color: #E25E3E;
+    width: 10%;
+    font-size: 220%;
+    margin-top: 8%;
+  }
+
+  .fa-arrow-circle-left:hover {
+    color: #d14816;
+  }
+
+  #passSec {
+   background-color: rgb(251, 202, 129);
+  }
+ 
+  #h6 {
+    color: rgb(107, 112, 114);
+    margin-left: 1%;
+  }
+  #changePasswordModal {
+    margin-top: 40%;
+  }
+
+  #submitPasswordBtn {
+    background-color: #E25E3E;
+    border: #E25E3E;
+  }
+
+  .custom-btn {
+    background-color:#E25E3E; /* Green background color */
+    border: #E25E3E;
+    color: white; /* White text color */
+    padding: 12px 24px; /* Padding for the button */
+    font-size: 17px; /* Font size for the button text */
+    border-radius: 6px; /* Rounded corners */
+  }
+  
+  
+  .btn-icon {
+    margin-right: 5px; /* Spacing between icon and text */
+  }
+  
+  .btn-text {
+    vertical-align: middle; /* Center text vertically */
+    
+  }
+  

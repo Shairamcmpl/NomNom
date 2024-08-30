@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomNom</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="./assets/css/homepage.css" rel="stylesheet">      
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script type="module" src="./assets/registration_js/auth/stalls.js"></script>  
+        
+
+</head>
+    
+<body id="top">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./homepage.html">
+                  <img src="./assets/images/logs.png" alt="back" width="70" height="65">
+                  <span class="brand-text">NomNom</span>
+                </a>
+
+                <!-- Profile -->
+                <button id="Profile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img src="assets/images/profile/nav-profile.png" alt="Button Image" style="width: 37px; height: 37px;">
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <a href="./profile.html" class="sub-menu-link">
+                        <img src="./assets/images/profile/Edit-profile.png">
+                        <p>Profile Info</p>
+                        <span>></span>
+                    </a>
+                    <a href="./saved.html" class="sub-menu-link">
+                        <img src="./assets/images/profile/saved-locations.png">
+                        <p>Saved Locations</p>
+                        <span>></span>
+                    </a>
+                    <div class="d-grid" id="btn_logout">
+                        <button class="btn btn-primary btn-signup text-uppercase fw-bold" type="logout" style="background-color: #E25E3E;">Log out</button>
+                    </div>
+                </div>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="./homepage.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll"  href="./stalls.html">FOOD STALLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="./guide.html">HOW IT WORKS?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="./faq.html">FAQs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="./developers.html">DEVELOPERS</a>
+                        </li>
+                    </ul>
+                </div> <!-- Closing div for navbar-collapse -->
+
+            </div>
+        </nav>
+
+        <!-- Top -->
+        
+        <header class="site-header d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-5 col-12 mb-5">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./homepage.html">Homepage</a></li>
+
+                                <li class="breadcrumb-item active" aria-current="page">Food Stalls</li>
+                            </ol>
+                        </nav>
+
+                        <h2 class="text-white">Mouth-watering options!<br><h5>Don't forget to save your fave Locations </h5></h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        <div class="topics-detail-block bg-white shadow-lg">
+                            <img src="./assets/images/stalls/banner_gif.gif" class="topics-detail-block-image img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- End of Navbar -->
+        
+
+        <!--Stalls-->
+        <section class="explore-section section-padding" id="section-2-FS">
+          <div class="container">
+      
+                  <div class="col-12 text-center">
+                      <h2 class="mb-4">Food Stalls</h2>
+                  </div>
+          </div>
+      
+          
+          <div class="container-fluid">
+              <div class="row">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="CAA-tab" data-bs-toggle="tab" data-bs-target="#CAA-tab-pane" type="button" role="tab" aria-controls="CAA-tab-pane" aria-selected="false">CAA</button>
+                      </li>
+      
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="OLD_CAS-tab" data-bs-toggle="tab" data-bs-target="#OLD_CAS-tab-pane" type="button" role="tab" aria-controls="OLD_CAS-tab-pane" aria-selected="false">OLD-CAS</button>
+                      </li>
+      
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="CED-tab" data-bs-toggle="tab" data-bs-target="#CED-tab-pane" type="button" role="tab" aria-controls="CED-tab-pane" aria-selected="false">CED</button>
+                      </li>
+      
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="COFES-tab" data-bs-toggle="tab" data-bs-target="#COFES-tab-pane" type="button" role="tab" aria-controls="COFES-tab-pane" aria-selected="false">COFES</button>
+                      </li>
+      
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="HINANG-tab" data-bs-toggle="tab" data-bs-target="#HINANG-tab-pane" type="button" role="tab" aria-controls="HINANG-tab-pane" aria-selected="false">CEGS</button>
+                      </li>
+      
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="KINAADMAN-tab" data-bs-toggle="tab" data-bs-target="#KINAADMAN-tab-pane" type="button" role="tab" aria-controls="KINAADMAN-tab-pane" aria-selected="false">CHASS</button>
+                      </li>
+      
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="LIBRARY-tab" data-bs-toggle="tab" data-bs-target="#LIBRARY-tab-pane" type="button" role="tab" aria-controls="LIBRARY-tab-pane" aria-selected="false">LIBRARY</button>
+                      </li>
+      
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="NSB-tab" data-bs-toggle="tab" data-bs-target="#NSB-tab-pane" type="button" role="tab" aria-controls="NSB-tab-pane" aria-selected="false">NSB</button>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="CAA-tab-pane" role="tabpanel" aria-labelledby="CAA-tab" tabindex="0">
+                            <div class="row">
+    
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">AJJ FOOD HUB</h5>
+                                                <span class="badge bg-CAA rounded-pill ms-auto">1</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/ajj.jpg" class="card-img-top img-fluid" alt="AJJ Food Hub">
+                                        
+                                        <div class="card-body">
+                                            <a href="./ajj.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="0">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                              
+                                </div>
+                                
+                            </div>
+                        </div>
+                                
+                        <div class="tab-pane fade" id="OLD_CAS-tab-pane" role="tabpanel" aria-labelledby="OLD_CAS-tab" tabindex="0">
+                            <div class="row">
+    
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">LIL'S CAFETERIA</h5>
+                                                <span class="badge bg-OLD_CAS rounded-pill ms-auto">1</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/lils.jpg" class="card-img-top img-fluid" alt="LIL'S CAFETERIA">
+                                        
+                                        <div class="card-body">
+                                            <a href="./lils.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="1">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>                                
+
+                            </div>
+                        </div>  
+                
+                    <!-- CED -->
+                        <div class="tab-pane fade" id="CED-tab-pane" role="tabpanel" aria-labelledby="CED-tab" tabindex="0">
+                            <div class="row">
+
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">BLYTHS CANTEEN</h5>
+                                                <span class="badge bg-CED rounded-pill ms-auto">1</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/blyths.jpg" class="card-img-top img-fluid" alt="BLYTHS CANTEEN">
+                                        
+                                        <div class="card-body">
+                                            <a href="./blyths.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="2">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>                                
+    
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">CED CANTEEN</h5>
+                                                <span class="badge bg-CED rounded-pill ms-auto">2</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/ced.jpg" class="card-img-top img-fluid" alt="CED CANTEEN">
+                                        
+                                        <div class="card-body">
+                                            <a href="./cedcanteen.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="3">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                                
+                        <div class="tab-pane fade" id="COFES-tab-pane" role="tabpanel" aria-labelledby="COFES-tab" tabindex="0">
+                            <div class="row">
+    
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">KOFES CANTEEN</h5>
+                                                <span class="badge bg-COFES rounded-pill ms-auto">1</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/koefs.jpg" class="card-img-top img-fluid" alt="KOFES CANTEEN">
+                                        
+                                        <div class="card-body">
+                                            <a href="./kofes.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="4">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+
+                            </div>
+                        </div> 
+
+                        <!-- CEGS -->
+                        <div class="tab-pane fade" id="HINANG-tab-pane" role="tabpanel" aria-labelledby="HINANG-tab" tabindex="0">
+                            <div class="row">
+    
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">GRAZZIA'S FOOD SERVICE</h5>
+                                                <span class="badge bg-CEGS rounded-pill ms-auto">1</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/grazzias.jpg" class="card-img-top img-fluid" alt="GRAZZIA'S FOOD SERVICE">
+                                        
+                                        <div class="card-body">
+                                            <a href="./grazzias.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="5">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">THE BREW CORP</h5>
+                                                <span class="badge bg-CEGS rounded-pill ms-auto">2</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/brewcorp.jpg" class="card-img-top img-fluid" alt="THE BREW CORP">
+                                        
+                                        <div class="card-body">
+                                            <a href="./brewcorp.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="6">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">CHIRPY SNACKS_HINANG</h5>
+                                                <span class="badge bg-CEGS rounded-pill ms-auto">3</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/chirpyhinang.jpg" class="card-img-top img-fluid" alt="CHIRPY SNACKS_HINANG">
+                                        
+                                        <div class="card-body">
+                                            <a href="./chirpyh.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="7">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                          
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">LEGENDARY TAKKOYAKI</h5>
+                                                <span class="badge bg-CEGS rounded-pill ms-auto">4</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/legendary.jpg" class="card-img-top img-fluid" alt="LEGENDARY TAKKOYAKI">
+                                        
+                                        <div class="card-body">
+                                            <a href="./legendary.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="8">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> 
+                        
+                        <!-- CHASS -->
+                        <div class="tab-pane fade" id="KINAADMAN-tab-pane" role="tabpanel" aria-labelledby="KINAADMAN-tab" tabindex="0">
+                            <div class="row">
+    
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">BRYAN'S LETCHON</h5>
+                                                <span class="badge bg-CHASS rounded-pill ms-auto">1</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/bryans.jpg" class="card-img-top img-fluid" alt="BRYAN'S LETCHON">
+                                        
+                                        <div class="card-body">
+                                            <a href="./bryans.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="9">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">TOILY'S BUBBLE TEA AND SHAWARMA</h5>
+                                                <span class="badge bg-CHASS rounded-pill ms-auto">2</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/toilys.jpg" class="card-img-top img-fluid" alt="TOILY'S BUBBLE TEA AND SHAWARMA">
+                                        
+                                        <div class="card-body">
+                                            <a href="./toilys.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="10">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">ZINNIA'S SIOMAI FOOD CORNER</h5>
+                                                <span class="badge bg-CHASS rounded-pill ms-auto">3</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/maps/zinnia.jpg" class="card-img-top img-fluid" alt="ZINNIA'S SIOMAI FOOD CORNER">
+                                        
+                                        <div class="card-body">
+                                            <a href="./zinnia.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="11">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">KHOY'S FOODHUB</h5>
+                                                <span class="badge bg-CHASS rounded-pill ms-auto">4</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/khoys.jpg" class="card-img-top img-fluid" alt="KHOY'S FOODHUB">
+                                        
+                                        <div class="card-body">
+                                            <a href="./khoys.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="12">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                                         
+                            </div>
+                        </div> 
+
+                        <!-- LIBRARY -->
+                        <div class="tab-pane fade" id="LIBRARY-tab-pane" role="tabpanel" aria-labelledby="LIBRARY-tab" tabindex="0">
+                            <div class="row">
+    
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">BOFFO FOOD HUB</h5>
+                                                <span class="badge bg-LIBRARY rounded-pill ms-auto">1</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/boffo.jpg" class="card-img-top img-fluid" alt="BOFFO FOOD HUB">
+                                        
+                                        <div class="card-body">
+                                            <a href="./boffo.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="13">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">ICT CAFE LIBRARY</h5>
+                                                <span class="badge bg-LIBRARY rounded-pill ms-auto">2</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/ict.jpg" class="card-img-top img-fluid" alt="ICT CAFE LIBRARY">
+                                        
+                                        <div class="card-body">
+                                            <a href="./ict.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="14">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">HONESTY CORNER</h5>
+                                                <span class="badge bg-LIBRARY rounded-pill ms-auto">3</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/honesty.jpg" class="card-img-top img-fluid" alt="HONESTY CORNER">
+                                        
+                                        <div class="card-body">
+                                            <a href="./honesty.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="15">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    <!-- NSB -->
+                        <div class="tab-pane fade" id="NSB-tab-pane" role="tabpanel" aria-labelledby="NSB-tab" tabindex="0">
+                            <div class="row">
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">SETH'S TREAT</h5>
+                                                <span class="badge bg-NSB rounded-pill ms-auto">1</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/seth.jpg" class="card-img-top img-fluid" alt="SETH'S TREAT">
+                                        
+                                        <div class="card-body">
+                                            <a href="./seths.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="16">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">TEAKOYAKEN</h5>
+                                                <span class="badge bg-NSB rounded-pill ms-auto">2</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/teakoyaken.jpg" class="card-img-top img-fluid" alt="TEAKOYAKEN">
+                                        
+                                        <div class="card-body">
+                                            <a href="./teakoyaken.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="17">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">BXU BENTELOG</h5>
+                                                <span class="badge bg-NSB rounded-pill ms-auto">3</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/bentelog.jpg" class="card-img-top img-fluid" alt="BXU BENTELOG">
+                                        
+                                        <div class="card-body">
+                                            <a href="./bentelog.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="18">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">CHIRPY SNACKS_NSB</h5>
+                                                <span class="badge bg-NSB rounded-pill ms-auto">4</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/chirpynsb.jpg" class="card-img-top img-fluid" alt="CHIRPY SNACKS_NSB">
+                                        
+                                        <div class="card-body">
+                                            <a href="./chirpy.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="19">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="card shadow-lg">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <h5 class="card-title mb-2">SgSg</h5>
+                                                <span class="badge bg-NSB rounded-pill ms-auto">5</span>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/stalls/sgsg.jpg" class="card-img-top img-fluid" alt="SgSg">
+                                        
+                                        <div class="card-body">
+                                            <a href="./sgsg.html" class="btn bg-warning-subtle me-2">
+                                                <i class="fas fa-map-marker-alt me-1 red-icon"></i> Location
+                                            </a>
+                                            <button class="btn bg-warning" id="btn_save" data-id="20">
+                                                <i class="fas fa-heart me-1 red-icon"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div id="foodStalls">
+                                    <!-- Display food stalls dynamically here -->
+                                </div>
+                                
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+       
+    <!-- JAVASCRIPT FILES -->
+    <script type="module" src="./assets/homepage/jquery.min.js"></script>
+    <script type="module" src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./assets/homepage/jquery.sticky.js"></script>
+    <script type="module" src="./assets/homepage/click-scroll.js"></script>
+    <script type="module" src="./assets/homepage/custom.js"></script>
+    <script type="module" src="./assets/registration_js/auth/saved.js"></script>
+    <script type="module" src="./assets/registration_js/auth/dashboard.js"></script>     
+    <!--supabase-->
+
+
+
+</body>
+</html>
